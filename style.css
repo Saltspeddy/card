@@ -3,10 +3,12 @@
 
 body{
     background-color: hsl(30, 38%, 92%);
+    
 }
 
 @media screen and (min-width: 800px) { 
     .container{
+        position: absolute;
         width: 600px;
         display: grid;
         grid-template-columns: 300px 300px;
@@ -16,13 +18,13 @@ body{
         background-color: hsl(0, 0%, 100%);
     
         margin:0 auto;
-        justify-content: center;
     
-        border: 2px transparent;
         border-radius: 10px;
     
         top: 50%;
-        transform: translateY(50%);
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
     .img{
     
@@ -36,6 +38,7 @@ body{
 }
 @media screen and (max-width: 800px) {
     .container{
+        position: absolute;
         width: 330px;
         display: grid;
         grid-template-columns: 330px;
@@ -49,7 +52,9 @@ body{
         border-radius: 10px;
         
         top: 50%;
-        transform: translateY(25%);
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 
     .img{
